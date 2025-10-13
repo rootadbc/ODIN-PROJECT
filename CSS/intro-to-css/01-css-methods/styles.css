@@ -1,0 +1,10 @@
+/* CSS format for the index.html page - specifically for the div selector */
+
+div {
+  color:white;
+  background-color: red;
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+
+}

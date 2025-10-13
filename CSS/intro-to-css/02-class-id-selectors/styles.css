@@ -1,0 +1,26 @@
+/* Here i will be adding the stles for the index.html */
+
+.cls_1 , .cls_3
+/* used the group selector in this scenrio, to pick multiple class
+- sharing the same properties */
+{
+ background-color: pink;
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#id_2 {
+    
+ color: blue;
+ font-size: 36px;
+}
+
+.cls_3{
+    font-size: 24px;
+}
+
+#id_4 {
+
+    background-color: aquamarine;
+    font-size: 24px;
+    font-weight: bold;
+}

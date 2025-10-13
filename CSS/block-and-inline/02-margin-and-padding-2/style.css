@@ -1,0 +1,60 @@
+body {
+  background: #eee;
+  font-family: sans-serif;
+}
+
+.card {
+  width: 400px;
+  background: #fff;
+  margin: 8px;
+  padding:8px;
+}
+
+.title {
+  background: #e3f4ff;
+  font-size: 16px;
+  padding:8px;
+  margin-bottom: 8px;
+}
+
+.content {
+  background: #e3f4ff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 8px;
+  /*
+  using the padding shortcut can also help padding: (top/bottm) ( left/right)
+  */
+
+}
+
+.button-container {
+  background: #e3f4ff;
+  
+  padding: 8px;
+ text-align: center;
+ 
+  
+}
+
+button {
+  background: white;
+  border: 1px solid #eee;
+  padding-top:8px;
+  padding-bottom: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+  /*
+  padding can also utilize shortcut; padding: (top/bottom) (left/right)
+  */
+  display:block;
+  margin:auto;
+  /*
+  display:block; - give the button a new line > making the button to be on a seperate line
+  */
+  /*
+  margin:auto - 
+  */
+}
