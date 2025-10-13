@@ -1,0 +1,106 @@
+* ,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+*{
+    background-color:#FFE6EA;
+   padding:auto;
+   margin: 10px;
+    
+}
+
+
+/*title section  */
+
+.title.home h1, .title.egusi h1 , .title.jollof h1 , .title.dodo h1{
+
+    text-align: center;
+    font-size: 70px;
+    margin: 50px 50px;
+    font-family: "Brush Script MT",'Times New Roman', Times, serif  ;
+    color: white;
+}
+
+/* home recipe list */
+
+.recipe.home_list li{
+
+border: 3px solid white;
+text-align: center;
+margin: 20px;
+padding:20px
+
+
+
+}
+
+.button {
+
+    display:block;
+    align-self: center;
+
+}
+
+.image {
+
+
+}
+
+/* description section */
+
+.description.title_egusi h3, .description.title_dodo h3 ,.description.title_jollof h3 {
+
+font-size: x-large;
+color: black;
+border: 5px outset white;
+text-align: center;
+    
+}
+
+.ingredient.jollof_list ul,
+.ingredient.egusi_list ul,
+.ingredient.dodo_list ul
+{
+
+border: 5px ridge white;
+
+
+}
+
+
+
+
+
+/* ingredient section*/
+
+.ingredient.egusi_title h3 
+, .ingredient.jollof_title h3
+, .ingredient.dodo_title h3 {
+
+    border: 3px dotted white;
+    text-align: center;
+    font-size: x-large;
+}
+
+
+/* steps section */
+
+.steps.egusi_title p
+, .steps.jollof_title p ,
+.steps.dodo_title p 
+{
+text-align: center;
+font-size: x-large;
+border: 3px dotted white;
+
+}
+
+.steps.list_egusi ol,
+.steps.list_dodo ol,
+.steps.list_jollof ol {
+
+    border: 5px ridge white;
+
+}
