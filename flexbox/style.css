@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-container {
+  color: #fff;
+  background-color: #5995DA;  /* Blue */
+  padding: 20px 0;
+}
+
+.menu {
+  /* border: 1px solid #fff;  /* For debugging */
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* introducing the flexbox */
+
+.menu-container{
+
+    display:flex;
+    justify-content: center;
+}
+
+/* links */
+.links {
+ 
+   display:flex;
+   justify-content: flex-end;
+
+}
+
+/* item */
+
+.login {
+    margin-left: 20px;
+
+}
+
+.header-container {
+
+    color: #5995DA;
+    background-color:  #d6e9fe;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+   
+
+}
+
+/* without flexbox */
+.social,
+.logo,
+.subscribe {
+  /*  border: 1px solid #5995DA; */
+}
+
+/* images section */
+
+.photo-grid-container {
+
+    display:flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    
+   width: 900px ;
+   display:flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   flex-direction: row;
+    /*justify-content: center;*/
+   align-items: center;
+
+
+}
+
+
+.photo-grid-item {
+   
+   border:1px solid #fff;
+   width: 300px;
+   height: 300px;
+
+}
+
+.first-item{
+   
+    order: 1;
+}
+
+.last-item{
+
+    order: -1;
+}
+
+
+.social,
+.subscribe {
+     
+   align-self: flex-end;
+   margin-bottom: 20px;
+
+}
+
+
+.footer {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item{
+   
+   border:1px solid #fff;
+   background-color: #D6E9FE;
+   height: 200px;
+   flex: 1 ;
+
+}
+
+.footer-three{
+
+    flex:2 ;
+
+}
