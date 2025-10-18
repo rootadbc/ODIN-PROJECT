@@ -15,14 +15,14 @@ box-sizing: border-box;
 
 /* universal body frame */
 
-#frame{
+#frame {
 border: 2.5px dashed black;
 
 }
 
 /* <----------title section ---------->*/
 
-.title.home h1, .title.egusi h1 , .title.jollof h1 , .title.dodo h1{
+.title.home > h1, .title.egusi > h1 , .title.jollof > h1 , .title.dodo > h1 {
 
     text-align: center;
     font-size: 70px;
@@ -32,31 +32,42 @@ border: 2.5px dashed black;
 }
 
 /* <----------home menu section ---------->*/
-
-/* menu list */
-.recipe.menu_list h3{
+/* menu container */
+.recipe.menu_list {
 
  display: flex;
- justify-content: center;
+ /* flex-direction: row;  - flex ( is row by default ) */
+ justify-content: space-evenly;
+ 
+ 
+ 
+}
+
+
+
+/* menu list */
+.recipe.menu_list > h3{
+
  font-size: x-large;
  color: black;
  border: 5px outset white;
  text-align: center;
-
-
-
+ 
 }
+
+
 
 
 /* <----------button section  ---------->*/
 
 /* home */
 .home_button {
-
+ 
+ 
  font-size: x-large;
-color: black;
-border: 5px outset white;
-text-align: center;
+ /* color: black; */
+ border: 5px outset white;
+ text-align: center;
 
 }
 
