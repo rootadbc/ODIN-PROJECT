@@ -25,9 +25,11 @@ ul {
   list-style-type: none;
   display: flex;
   gap: 2rem;
-  border:2px solid red;
- 
+  /* border:2px solid red; */
+  margin: 0;
+  padding: 0;
   
+  /* added margin and padding 0 to make the item stay at the end of the */
  
 }
 
