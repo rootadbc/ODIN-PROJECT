@@ -7,7 +7,7 @@ box-sizing: border-box;
 /* universal settings */
 
 *{
-  background-color:#FFE6EA;
+   background-color:#FFE6EA;
    padding:auto;
    margin: 10px;
       
@@ -36,10 +36,12 @@ border: 2.5px dashed black;
 /* menu list */
 .recipe.menu_list h3{
 
-font-size: x-large;
-color: black;
-border: 5px outset white;
-text-align: center;
+ display: flex;
+ justify-content: center;
+ font-size: x-large;
+ color: black;
+ border: 5px outset white;
+ text-align: center;
 
 
 
