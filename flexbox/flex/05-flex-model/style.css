@@ -83,7 +83,7 @@ button.cancel {
 
 .header {
     margin-right: 100px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     font-size:larger;
     align-self: center;
     font-weight: bold;
@@ -92,7 +92,7 @@ button.cancel {
 
 .text {
 
-  text-wrap: wrap;
+  /* text-wrap: wrap; */
   padding-left:55px;
   padding-bottom: 15px;
   padding-right: 15px;
