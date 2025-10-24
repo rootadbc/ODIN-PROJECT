@@ -1,0 +1,35 @@
+Here’s a more **text‑friendly rewrite** highlighting the differences simply and clearly, without technical clutter:  
+
+***
+
+**Font setup:**  
+-  The first code loads Roboto using detailed `@font-face` sections from Google Fonts.  
+-  The second code just uses a cleaner `@import` line to bring in Roboto 400/700 faster.  
+
+**Layout style:**  
+-  The first code builds the layout piece by piece — header, content, footer — all styled separately.  
+-  The second code makes the whole page a flexbox (`body` as a flex container) so the layout flows naturally.  
+
+**Header & footer:**  
+-  In the first one, both header and footer have separate left and right link sections.  
+-  In the second, they’re simpler — just a single flexbox with items spaced apart.  
+
+**Main content:**  
+-  The first code centers everything by hand using padding and positioning.  
+-  The second centers content automatically with `align-items`, `justify-content`, and a `gap` value.  
+
+**Links & colors:**  
+-  The first uses `color: grey` and `text-decoration-line`.  
+-  The second uses `color: #666` and `text-decoration: none` (shorter and more common).  
+
+**Buttons & inputs:**  
+-  Both style these similarly. The first gives buttons larger padding (10×15px); the second is a bit smaller (8×16px).  
+
+**Lists:**  
+-  The first just removes bullets.  
+-  The second removes bullets PLUS resets margins/padding and lays items in a row with flex and gaps.  
+
+**Overall:**  
+-  The first CSS is longer, more old‑school, and broken into parts.  
+-  The second is shorter, more “modern,” and uses flexbox everywhere for cleaner, easier layout control.
+
