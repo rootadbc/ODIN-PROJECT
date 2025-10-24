@@ -133,6 +133,7 @@ input {
   /* border:2px solid red; */
   background-color: #eeeeee;
   margin-top: 20px;
+  flex-shrink: 0;
 
 }
 
