@@ -24,3 +24,96 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* SOLUTION */
+
+/* HEADER */
+
+.header {
+     display: flex; 
+     justify-content: space-between; 
+     margin-top: 20px; 
+     padding-right: 30px;
+     border: 2px solid red;
+     
+       
+}
+
+.header > .left-links {
+     display: flex;
+     justify-content:space-around ;
+     gap: 20px;
+     border: 2px solid black;
+}
+
+.header > .right-links{
+     display: flex;
+     justify-content: space-around;
+     gap: 20px;
+     border: 2px solid black;
+     
+
+}
+
+
+
+/* CENTER */
+
+.content {
+     display: flex;
+     flex-direction: column;
+     margin: 30px;
+     gap:30px;
+     border: 2px solid red;
+     /* padding: 100px; */
+     
+
+ 
+     
+}
+
+img {
+     align-self: center;
+     border: 2px solid black;
+
+}
+
+.input {
+     align-self: center;
+     border: 2px solid black;
+
+}
+
+.content > .buttons {
+     display: flex;
+     align-self: center ;
+     gap:20px;
+     border:2px solid black;
+     
+
+}
+
+
+/* FOOTER */
+
+.footer {
+     display: flex;
+     justify-content: space-between;
+     padding-right: 30px;
+     border:2px solid red;
+     background-color: #eeeeee;
+
+
+}
+
+.footer > .left-links {
+     display: flex;
+     gap: 20px;
+
+}
+
+.footer > .right-links {
+     display: flex;
+     gap: 20px;
+
+}
