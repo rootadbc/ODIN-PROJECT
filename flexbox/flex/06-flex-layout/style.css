@@ -5,6 +5,7 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  
 }
 
 img {
@@ -14,7 +15,7 @@ img {
 button {
   font-family: Roboto, sans-serif;
   border: none;
-  border-radius: 8px;
+  border-radius: 8px; 
   background: #eee;
 }
 
@@ -25,95 +26,125 @@ input {
   width: 400px;
 }
 
-/* SOLUTION */
+/* <---- SOLUTION -----> */
 
-/* HEADER */
+
+
+/* GENERAL*/
+
+
+ul {
+  list-style: none;
+
+}
+
+a {
+  text-decoration-line: none;
+  color: grey;
+
+}
+
+
+/* <-- HEADER--> */
 
 .header {
-     display: flex; 
-     justify-content: space-between; 
-     margin-top: 20px; 
-     padding-right: 30px;
-     border: 2px solid red;
+  display: flex; 
+  justify-content: space-between; 
+  margin-top: 20px; 
+  padding-right: 30px;
+  /* border: 2px solid red; */
      
        
 }
 
 .header > .left-links {
-     display: flex;
-     justify-content:space-around ;
-     gap: 20px;
-     border: 2px solid black;
+  display: flex;
+  justify-content:space-around ;
+  gap: 20px;
+  /* border: 2px solid black; */
 }
 
 .header > .right-links{
-     display: flex;
-     justify-content: space-around;
-     gap: 20px;
-     border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  /* border: 2px solid black; */
      
 
 }
 
 
-
-/* CENTER */
+/* <-- CENTER --> */
 
 .content {
-     display: flex;
-     flex-direction: column;
-     margin: 30px;
-     gap:30px;
-     border: 2px solid red;
-     /* padding: 100px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+   
+  /* gap:30px; */
+  /* border: 2px solid red; */
      
-
- 
-     
+    
 }
 
 img {
-     align-self: center;
-     border: 2px solid black;
+  /* align-self: center; */
+  /* border: 2px solid black; */
 
 }
 
 .input {
-     align-self: center;
-     border: 2px solid black;
+  /* align-self: center; */
+  margin: 15px;
+
+  /* border: 2px solid black; */
 
 }
 
 .content > .buttons {
-     display: flex;
-     align-self: center ;
-     gap:20px;
-     border:2px solid black;
+  display: flex;
+  /* align-self: center ; */
+  gap:5px;
+  /* border:2px solid black; */
+       
      
 
 }
 
 
-/* FOOTER */
+button {
+  padding: 10px 15px; 
+}
+/* 
+input {
+  margin-bottom: 0;
+
+    
+} */
+
+
+/* <-- FOOTER --> */
 
 .footer {
-     display: flex;
-     justify-content: space-between;
-     padding-right: 30px;
-     border:2px solid red;
-     background-color: #eeeeee;
-
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+  /* border:2px solid red; */
+  background-color: #eeeeee;
+  margin-top: 20px;
 
 }
 
 .footer > .left-links {
-     display: flex;
-     gap: 20px;
+  display: flex;
+  gap: 20px;
 
 }
 
 .footer > .right-links {
-     display: flex;
-     gap: 20px;
+  display: flex;
+  gap: 20px;
 
 }
+
