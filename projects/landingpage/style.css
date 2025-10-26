@@ -1,0 +1,32 @@
+/* Landing page project CSS */
+
+body {
+  display:flex;
+  
+  border:2px solid red;  
+}
+
+.section-1{
+
+  border:2px solid red;
+}
+
+.section-2 {
+
+  border:2px solid red;
+}
+
+.section-3 {
+
+  border:2px solid red;
+}
+
+.section-4 {
+
+  border:2px solid red;
+}
+
+.footer {
+
+  border:2px solid red;
+}
