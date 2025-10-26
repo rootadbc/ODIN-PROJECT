@@ -1,32 +1,161 @@
 /* Landing page project CSS */
 
 body {
-  /* display:flex;
+  display:flex;
+  flex-direction: column;
+  /* min-height:100vh */
+  border:2px solid red;  
+}
+
+/* SECTION ONE */
+
+.one{
+  display:flex;  
+  flex-direction: column;
+  margin: 0 150px;
+  gap:70px;
+  border:2px solid red;
+}
+
+.header , .header2 {
   
-  border:2px solid red;   */
+  border:1px solid black;
 }
 
-.section-1{
+.header {
+  display:flex; 
+  justify-content: space-between;
+  align-items: center;
+       
+}
+
+
+h3 {
+  
+  
+}
+
+a {
+  text-decoration-line: none;
+  color: black;
+}
+
+ul{
+  list-style-type: none;
+  
+}
+
+.header > .link {
+  
+}
+
+
+.header2 {
+  display:flex;
+  margin-bottom:70px;
+  /* flex:0;   */
+  
+}
+
+.head-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* border:1px solid lime; */
+  
+}
+
+
+.head-left > h2 {
+  font-size: xxx-large;
+  text-wrap: wrap;
+  border:1px solid lime;
+}
+
+.head-left > p {
+    
+  text-wrap: wrap;
+  border:1px solid lime;
+}
+
+.head-left > button {
+
+  border:1px solid lime;
+}
+
+
+.head-right {
+  
+  
+  width:100%;  
+  border:1px solid lime;
+  
+}
+
+.head-right > p {
+
+  text-align: center;
+  border:1px solid lime;
+}
+
+/* SECTION TWO */
+
+.two {
+  display:flex;
+  flex-direction: column;
+  
+  border:2px solid red;
+}
+
+.two > .title {
+  font-weight: bold;  
+  font-size: x-large;
+  align-self: center;
+}
+
+
+.two > .title , .two-body {
+
+  padding:50px;
+  /* margin: 20px; */
+  border:1px solid black;
+}
+
+.two-body {
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    border:1px solid blue;
+}
+
+.two-body .body {
+   
+   text-align:center;
+   max-width: 200px;
+   border:1px solid greenyellow;
+}
+
+
+/* SECTION THREE */
+
+.three {
 
   border:2px solid red;
 }
 
-.section-2 {
+/* SECTION FOUR */
+
+.four {
+  
 
   border:2px solid red;
 }
 
-.section-3 {
+/* SECTION END */
 
-  border:2px solid red;
-}
-
-.section-4 {
-
-  border:2px solid red;
-}
 
 .footer {
-
-  border:2px solid red;
+  
+  align-self: center;
+  border:2px solid black;
 }
