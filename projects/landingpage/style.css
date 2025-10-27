@@ -38,7 +38,7 @@ body   *{
 
 .header h3 {
   
-  border: 1px dashed lime;
+  /* border: 1px dashed lime; */
   font-size: 24px;
   color: #f9faf8;
      
@@ -47,7 +47,7 @@ body   *{
 
 nav ul {
   display:flex;
-  border: 1px dashed lime;
+  /* border: 1px dashed lime; */
   gap:10px;
   font-size: 18px;
   color:E5E7EB;
@@ -68,52 +68,66 @@ ul{
 .header2 {
   display:flex;
   margin-bottom:70px;
+  gap:30px;
   /* border:2px solid white */
   
 }
 
-/* .head-left {
+.head-left {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    /* gap:10px; */
+
+    
+    
+    /* border:1px solid lime; */
   
-  border:1px solid red;
   
 }
 
 
 .head-left > h2 {
+  
   font-size: 48px;
   color:#f9faf8;
   font-weight: 900;
   text-wrap: wrap;
-  border:1px solid lime;
+  /* border:1px solid lime; */
 }
 
-.head-left > p {
-  font-size: 14px;
+.head-left > span {
+  font-size: 16px;
   text-wrap: wrap;
-  border:1px solid lime;
+  /* border:1px solid lime; */
 }
 
 .head-left > .button {
   
-  border:1px solid lime;
+  /* border:1px solid lime; */
 }
 
 
 .head-right {
   
-  
-  width:100%;  
-  border:1px solid lime;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width:80%;  
+  /* border:1px solid lime; */
   
 }
 
 .head-right > p {
   
-  /* text-align: center;   */
-  font-size: 14px;
-  padding:20%;
+  text-align: center;  
+  font-size: 16px;
   
-  border:1px solid lime;
+  
+  
+  /* border:1px solid lime; */
 }
 
 /* SECTION 2 */
@@ -141,7 +155,7 @@ ul{
 .body {
   text-align:center;
   max-width: 200px;
-  border:1px solid greenyellow;
+  /* border:1px solid greenyellow; */
 }
 
 
@@ -150,7 +164,7 @@ ul{
 .three {
 
   background-color: #e5e7eb;
-  border:2px solid red;
+  /* border:2px solid red; */
 }
 
 blockquote {
@@ -159,14 +173,14 @@ blockquote {
   font-weight: 300;
   text-wrap: wrap;
   padding:20px 140px;  
-  border: 1px solid lime;
+  /* border: 1px solid lime; */
 }
 
 blockquote > footer {
     
   font-weight: 600;  
   text-align: right;
-  border: 1px solid lime;
+  /* border: 1px solid lime; */
 }
 
 
@@ -174,36 +188,46 @@ blockquote > footer {
 
 .four {
   display:flex;
-  justify-content: center;
-  margin:50px;
-  border:2px solid red;
+  justify-content: space-around;
+  margin:100px 160px;
+  background-color: #3882f6;
+  border-radius: 10px;;
+  /* border:2px solid red; */
 }
 
 .four-left {
+    
   
-  border:1px solid lime;
 }
 
 .four h3 {
-  
+  font-size: 24px;
   color: white;
 }
 
 .four p{
-    
-    color: white;
+  font-size: 16px;
+  color: white;
 }
 
-.four-right {
+.button {
+  align-self: center;
   
-  border:1px solid lime;
+  
+  
 }
 
-.four-left, .four-right  {
-  
-    /* display:flex; */
+.four button {
+  border-radius:10px;
+  width:130px;
+  height: 30px;
   background-color: #3882f6;
+  font-size: 16px;
+  color: white;
+  border:2px solid white;
   
+   
+
 }
 
 
@@ -222,5 +246,5 @@ blockquote > footer {
   /* display: flex; */
   color: white;
   text-align: center;
-  border:2px solid lime;
+  /* border:2px solid lime; */
 }
