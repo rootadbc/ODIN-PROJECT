@@ -279,8 +279,9 @@ blockquote > footer {
 
 footer {
   
-  color: white;
+  color: whitesmoke;
   text-align: center;
   padding:40px;
+  font-size: 18px;
   /* border:2px solid lime; */
 }
