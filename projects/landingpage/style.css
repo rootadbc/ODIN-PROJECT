@@ -66,52 +66,65 @@ ul{
 
 
 .header2 {
+
   height: auto;
   display:flex;
   margin-bottom:70px;
-  gap:30px;
+  gap:40px;
   /* border:2px solid white */
   
 }
 
-.head-left {
- 
-    
-}
+
 
 
 .head-left > h2 {
-  
+
   font-size: 48px;
   color:#f9faf8;
   font-weight: 900;
-  text-wrap: wrap;
+  word-wrap: wrap;
+  margin:0;
+  
+  
+  
   /* border:1px solid lime; */
 }
 
+
+
 .head-left > span {
-  font-size: 16px;
+  line-height: 1.5;
+  font-size: 18px;
   text-wrap: wrap;
+  
+  
   /* border:1px solid lime; */
 }
 
 .head-left  button {
-  
+  margin-top:10px;
+  margin-bottom: 0px;
   border-radius: 10px;  
-  height: 30px;
+  height: 40px;
   width:120px;
   background-color: #3882f6 ;
   font-size: 16px;
   color:white;
-  /* border:2px solid white; */
+    /* border:2px solid white; */
   
 }
 
+/* .head-left > h2 , span , button {
+  margin: 0;
+  padding: 5px;
+  
+} */
 
 .head-right {
   
   background-color: grey ;
-  width:100%;
+  width:90%;
   
 }
 
@@ -131,11 +144,13 @@ ul{
 /* SECTION 2 */
 
 .two {
+margin: 50px;
   
   
 }
 
-.title {
+.two > .title {
+  /* padding-top: 50px; */
   font-weight: 900;  
   font-size: 36px;
   color: #1F2937;
@@ -178,18 +193,23 @@ blockquote {
   font-size: 36px;
   color: #1F2937;
   font-weight: 300;
-  text-wrap: wrap;
+  font-style: italic;
+  word-wrap: wrap;
   padding:20px 140px;  
   /* border: 1px solid lime; */
 }
 
 blockquote > footer {
   font-size: 25px;
-  font-weight: 600;  
+  font-weight: 550;  
   text-align: right;
+  font-style: normal;
   color:black;
+  padding: 0;
   /* border: 1px solid lime; */
 }
+
+
 
 
 /* SECTION 4 */
@@ -197,16 +217,24 @@ blockquote > footer {
 .four {
   display:flex;
   justify-content: space-around;
-  margin:100px 160px;
+  margin:90px 160px;
   background-color: #3882f6;
-  border-radius: 10px;;
+  border-radius: 10px;
+  padding: 40px 0px;
   /* border:2px solid red; */
 }
 
 .four-left {
-    
+  
   
 }
+
+.four-left > h3 , p {
+  margin:0;
+  padding:1px;
+}
+
+
 
 .four h3 {
   font-size: 24px;
