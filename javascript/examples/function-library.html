@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Function library example</title>
+  <style>
+    input {
+      font-size: 2em;
+      margin: 10px 1px 0;
+    }
+  </style>
+  </head>
+<body>
+
+  <input class="numberInput" type="text">
+  <p></p>
+
+  <script>
+    const input = document.querySelector('.numberInput');
+    const para = document.querySelector('p');
+
+    // Add some useful functions to work with numbers below:
+    // The sequence() and cubed() functions are fairly obvious - they return the square and cube of a number respectively.
+    // The factorial() function returns the factorial of a number - the product of all positive integers up to that number.
+    // For example, factorial(5) = 5 * 4 * 3 * 2 * 1 = 120.
+    function squared(num) {
+        return num * num;
+    }
+
+    function cubed(num) {
+        return num * num * num;
+    }
+
+    function factorial(num) {
+        if (num < 0) return undefined;
+        if (num === 0) return 1;
+        let x = num - 1;
+        while (x > 1) {
+            num *= X;
+            x--;
+        }
+        return num;
+    }
+
+    // Include a way to print out information about entered number into the text input by adding the following event handler below the existing functions:
+
+    input.addEventListener('change', () => {
+        const num = parseFloat(input.value);
+        if (isNaN(num)) {
+            para.textContent = ' You need to enter a number!';
+        } else {
+            para.textContent = `${num} squared is ${squared(num)}. `;
+            para.textContent += `${num} cubed is ${cubed(num)}. `;
+            para.textContent += `${num} factorial is ${factorial(num)}. `;
+
+        }
+    });
+
+  </script>
+</body>
+</html>

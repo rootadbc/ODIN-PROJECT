@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    
+    // Write a function called add7 that takes one number and returns that numberber + 7.
+    // add7(10) should return 17
+    function add7 (num) {
+        return num + 7;
+    }
+
+    // Write a function called multiply that takes 2 numbers and returns their product.
+    // multiply(3, 5) should return 6
+
+    function multiply (num, num1) {
+        return num * num1;
+    }
+    // the issue i was facing was that, i wasn't reloading the page after making changes to the code.
+
+    // Write a function called capitalize that takes a string and returns that string with only the first letter capitalized. Make sure that it can take strings that are lowercase, UPPERCASE or Both.
+    // capitalize("hello") should return "Hello"
+    // using the toLowerCase() and toUpperCase() methods to change the string case
+
+    
+    function capitalize (str) {
+        let lCStr = str.toLowerCase();
+        return str[0].toUpperCase() + lCStr.slice(1);
+    
+        // Isolated the whole string into lCStr variable, and then isolated the first character into uppercase..
+    }
+
+
+    
+
+    // Write a function called lastLetter that takes a string and returns the very last letter of that string:
+    // lastLetter("hello") should return "o"
+    // using the charAT() method to extract the string character
+
+    function lastLetter (string ) {
+        return string.slice(-1);
+    }
+    // the mistake i was doing is : by not passing string into the console.log(parameter) - 'game'
+
+   </script>
+        
+</body>
+</html>
