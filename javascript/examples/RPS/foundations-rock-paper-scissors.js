@@ -20,6 +20,19 @@ const rockBtn = document.querySelector ('#rock'); // Rock button
 const paperBtn = document.querySelector('#paper'); // Paper button
 const scissorsBtn = document.querySelector('#scissors'); // Scissors button
 
+ // DOM Manipulation style
+resultDiv.style.fontSize = '20px';
+resultDiv.style.marginTop = '20px';
+
+rockBtn.style.fontSize = '16px';
+rockBtn.style.marginRight = '10px';
+
+paperBtn.style.fontSize = '16px';
+paperBtn.style.marginRight = '10px';
+
+scissorsBtn.style.fontSize = '16px';    
+scissorsBtn.style.marginRight = '10px';    
+
 // Helper function: Show a message inside the results <div>
 function showMessage(text) {
     // Replace the content with the new message
