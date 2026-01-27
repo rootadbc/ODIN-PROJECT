@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 12px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>My shopping list</h1>
+
+    <form>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item">
+      <button>Add item</button>
+    </form>
+
+    <ul>
+
+    </ul>
+
+    <script>
+
+        // 3 variables that hold rferences to the ul, input, and button elements
+        const ul = document.querySelector('ul');
+        const input = document.querySelector('input');
+        const addBtn = document.querySelector('button');
+
+       
+        // function that will run in response to the button click
+        function addItem(event) {
+            // prevent the form from submitting
+            event.preventDefault();
+        
+
+            // continue by storing the current value of the input in a variable
+            const itemText = input.value;
+            if (!itemText) return; // Skip empty inputs
+        
+            // clear the input element by setting its value to an empty string
+            input.value = '';
+
+            // create 3 new element nodes: li, span, and a button and store them in a variable
+            const li = document.createElement('li');
+            const span = document.createElement('span');
+            const delBtn = document.createElement('button');
+
+            // Append the span and button element as childrento the li element
+            li.appendChild(span);
+            li.appendChild(delBtn);
+
+            // Set the text content of the span to the input values saved earlier, and set the text content of the button to Delete.
+            span.textContent = itemText;
+            delBtn.textContent = 'Delete';
+        
+            // Append the list item to the list
+            ul.appendChild(li);
+        
+            // Attach an event handler to the Delete button so that, when clicked, it removed the entire list item (,li>...</li>) from the list.
+            delBtn.addEventListener('click', function() {
+                ul.removeChild(li);
+            });
+        
+            // Use the focus() method to focus the input element, so it's ready for entering the next shopping item.
+            input.focus();
+        }
+
+        // Attach event handler to the button element that listens for click events
+        addBtn.addEventListener('click', addItem);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM example</title>
+    
+    <style>
+        .highlight {
+            color: white;
+            background-color: black;
+            padding: 10px;
+            width: 250px;
+            text-align: center;
+        }
+
+    </style>
+
+  </head>
+  <body>
+      <section>
+        <img src="dinosaur.png" alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth.">
+        <p>Here we will add a link to the <a href="https://www.mozilla.org/">Mozilla homepage</a></p>
+      </section>
+      <script>
+
+        // To manipulate an element in the DOM, we first need to get a reference to it inside a variable. 
+        const link = document.querySelector('a');
+        link.textContent = "Monzilla Develloper Network"; // Change the text of the link
+        link.href = "https://developer.mozilla.org/"; // Change the URL of the link
+
+       
+        // Creating and placing new nodes in the DOM
+        const sect = document.querySelector('section');
+        const para = document.createElement('p'); // Create a new paragraph element
+        para.textContent = "We hope you enjoyed the ride."; // Add text to the new paragraph
+        sect.appendChild(para); // Append the new paragraph to the section element
+
+        // add text node to existing paragraph
+        const text = document.createTextNode(
+            " - the premier source for web development knowledge.",
+        );
+        const linkPara = document.querySelector('p');
+        linkPara.appendChild(text); // Append the text node to the paragraph element
+        
+        // Moving and Removing elements
+    
+        // To move the paragraph with the link inside it to the bottom of the section, we can use the appendChild() method again:
+        sect.append(linkPara); // This moves the paragraph to the end of the section
+
+        // To make a copy and add it to the section, we can use the cloneNode() method:
+        // Node.cloneNode()
+
+        // Removing a node from the DOM is easy with the removeChild() method:
+        // sect.removeChild(linkPara); // This removes the paragraph from the section
+
+        // To remove a node based only on a reference to itself
+        // linkPara.remove(); // This also removes the paragraph from the section
+
+        // Manipulating styles
+        // para.style.color ='white';
+        // para.style.backgroundColor = 'black';
+        // para.style.padding = '10px';
+        // para.style.width = '250px';
+        // para.style.textAlign = 'center';
+        
+        // Another way to dynamically change styles is to write sheet in a separate stylesheet and reference it by adding/removing classes
+        para.classList.add('highlight'); // Add the highlight class to the new paragraph
+
+
+      </script>
+
+  </body>
+</html>
