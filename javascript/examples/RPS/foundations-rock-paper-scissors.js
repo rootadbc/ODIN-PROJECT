@@ -65,9 +65,12 @@ function playRound(humanChoice, computerChoice) {
         if (humanWins) {
             humanScore++;
             showMessage(`You win this round! ${humanChoice} beats ${computerChoice}. Score - You: ${humanScore}, Computer: ${computerScore}`
-
             );
-        }
+        } else { // Update: add explicit else branch for computer win
+            computerScore++;
+        showMessage(`You lose this round! ${computerChoice} beats ${humanChoice}. Score - You: ${humanScore}, Computer: ${computerScore}`
+        );
+    }
 
     // After updating scores, check if someone has reached 5 points
     checkForWinner();
@@ -98,17 +101,17 @@ function playRound(humanChoice, computerChoice) {
     }
 
 // Event listeners for the buttons
-rockBtn.addEventListener('mousedown', () => {
+rockBtn.addEventListener('click', () => {
     const computerChoice = getComputerChoice(); // get random choice for computer
     playRound('rock', computerChoice); // human chose rock
 });
 
-paperBtn.addEventListener('mousedown', () => {
+paperBtn.addEventListener('click', () => {
     const computerChoice = getComputerChoice(); // get random choice for computer
     playRound('paper', computerChoice); // human chose paper
 })
 
-scissorsBtn.addEventListener('mousedown', () => {
+scissorsBtn.addEventListener('click', () => {
     const computerChoice = getComputerChoice(); // get random choice for computer
     playRound('scissors', computerChoice); 
 })
