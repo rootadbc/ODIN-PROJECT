@@ -98,17 +98,17 @@ function playRound(humanChoice, computerChoice) {
     }
 
 // Event listeners for the buttons
-rockBtn.addEventListener('click', () => {
+rockBtn.addEventListener('mousedown', () => {
     const computerChoice = getComputerChoice(); // get random choice for computer
     playRound('rock', computerChoice); // human chose rock
 });
 
-paperBtn.addEventListener('click', () => {
+paperBtn.addEventListener('mousedown', () => {
     const computerChoice = getComputerChoice(); // get random choice for computer
     playRound('paper', computerChoice); // human chose paper
 })
 
-scissorsBtn.addEventListener('click', () => {
+scissorsBtn.addEventListener('mousedown', () => {
     const computerChoice = getComputerChoice(); // get random choice for computer
     playRound('scissors', computerChoice); 
 })
