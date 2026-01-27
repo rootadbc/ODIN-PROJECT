@@ -1,0 +1,18 @@
+// Style for the Rock Paper Scissors game
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+/* .game {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+} */
