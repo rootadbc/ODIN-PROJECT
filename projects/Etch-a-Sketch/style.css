@@ -4,17 +4,18 @@
     box-sizing: border-box;
     /* border: 1px solid red; */
 }
-/* This is the main grid area */
 
-/* .borderDiv {
+
+.borderDiv {
     display: inline-block; 
-    
-} */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
  
-.gridContainer {
+.gridContainer { /* This is the main grid area */
     display: flex;  /*  turn on flexbox*/
     flex-wrap: wrap; /* allow items to wrap to next line */
-    width: 480px; /* total grid widht */
+    width: 480px; /* total grid width */
     height: 480px; /* total grid height */
     border: 1px solid black; /* border around grid */
 
@@ -29,3 +30,6 @@
     background-color: white; /* initial background color */
 }
 
+.square.drawn {
+    background-color: black; /* color when drawn on */
+}

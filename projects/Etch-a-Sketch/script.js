@@ -10,19 +10,31 @@ for (let i = 0; i < 16 * 16; i++) {
 
 }
 
+// Single listener on the container (event delegation )
+// option 1
 
-//Select all the small grid squares
-const squares = document.querySelectorAll('.square');
-
-// Loop through each square and add hover listener
-squares.forEach(square => {
-    square.addEventListener('mouseenter', () => {
-        console.log('hovered');
-        square.style.backgroundColor = 'black';
-    });
+container.addEventListener('mouseover', (event) => {
+    if (event.target.classList.contains('square')) {
+        event.target.classList.add('drawn');
+    }
 });
 
 
+
+
+
+
+// /// Select all the small grid squares
+// const squares = document.querySelectorAll('.square');
+
+// squares.forEach(square => {
+ 
+//   square.addEventListener('mouseenter', () => {  // HOVER: this is what should draw
+//     console.log('hovered');
+//     square.classList.add('drawn');      // change color on hover
+//   });
+
+// });
 
 console.log("Hello, Etch-a-Sketch!");
 
