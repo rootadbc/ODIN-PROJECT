@@ -19,6 +19,7 @@
     width: 480px; /* total grid width */
     height: 480px; /* total grid height */
     border: 1px solid black; /* border around grid */
+    overflow: hidden; /* hide any overflow */
 
 }
 

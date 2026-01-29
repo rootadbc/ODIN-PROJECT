@@ -17,7 +17,8 @@ function makeGrid(size) { // Reusable function to create a grid of (size × size
         square.classList.add('square');                  // Give it a class so CSS can style it
         square.style.height = `${squareSize}%`;    // Set the height based on the calculated size
         square.style.width = `${squareSize}%`;     // Set the width based on the calculated size
-     
+        square.style.flex = `0 0 ${squareSize}%`; // Set the flex basis to the calculated size
+        
         container.appendChild(square);                   // Put this square inside the container
 
     }
