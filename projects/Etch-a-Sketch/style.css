@@ -16,8 +16,8 @@
 .gridContainer { /* This is the main grid area */
     display: flex;  /*  turn on flexbox*/
     flex-wrap: wrap; /* allow items to wrap to next line */
-    width: 480px; /* total grid width */
-    height: 480px; /* total grid height */
+    width: 680px; /* total grid width */
+    height: 680px; /* total grid height */
     border: 1px solid black; /* border around grid */
     overflow: hidden; /* hide any overflow */
 
