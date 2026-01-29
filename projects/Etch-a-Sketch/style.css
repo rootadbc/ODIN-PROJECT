@@ -1,0 +1,25 @@
+/* This is the big box that holds all 256 squares */
+
+* {
+    box-sizing: border-box;
+    
+}
+
+/* This is the main grid area */
+.gridContainer {
+    display: flex;  /*  turn on flexbox*/
+    flex-wrap: wrap; /* allow items to wrap to next line */
+    width: 480px; /* total grid widht */
+    height: 480px; /* total grid height */
+    border: 1px solid black; /* border around grid */
+
+}
+
+/* This is each individual square inside the grid */
+.square {
+
+    flex: 0 0 6.25%; /* each square takes up 1/16th of the width */
+    height: 6.25%; /* each square takes up 1/16th of the height */
+    border: 1px solid #ddd; /* light border around each square */
+}
+
