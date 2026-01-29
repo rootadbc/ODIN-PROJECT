@@ -2,10 +2,15 @@
 
 * {
     box-sizing: border-box;
-    
+    /* border: 1px solid red; */
 }
-
 /* This is the main grid area */
+
+/* .borderDiv {
+    display: inline-block; 
+    
+} */
+ 
 .gridContainer {
     display: flex;  /*  turn on flexbox*/
     flex-wrap: wrap; /* allow items to wrap to next line */
@@ -21,5 +26,6 @@
     flex: 0 0 6.25%; /* each square takes up 1/16th of the width */
     height: 6.25%; /* each square takes up 1/16th of the height */
     border: 1px solid #ddd; /* light border around each square */
+    background-color: white; /* initial background color */
 }
 
