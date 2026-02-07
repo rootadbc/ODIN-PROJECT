@@ -1,3 +1,7 @@
 [submodule "javascript/JavaScript30"]
     path = javascript/JavaScript30
-    url = https://github.com/wesbos/JavaScript30.git
+    url = https://github.com/wesbos/JavaScript30.git  # Your fork [web:18]
+
+[submodule "javascript/javascript-exercises"]
+    path = javascript/javascript-exercises
+    url = https://github.com/TheOdinProject/javascript-exercises.git  # Paste the exact GitHub URL you meant (e.g., your fork)
