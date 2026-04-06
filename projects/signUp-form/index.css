@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+    border: 2px solid red;
+    font-family: "Anonymous Pro", monospace;
+
+}
+
+.formContainer {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* height: 100vh; */
+  gap: 1rem;
+}
+
+/* Background Image */
+.backgroundImage {
+  border: 1px solid red;
+}
+
+/* Text Area */
+.textSection {
+  border: 1px solid red;
+  display: block;
+}
+
+/* text section */
+.textArea {
+  border: 1px solid red;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+/* Form Area */
+.formArea {
+  border: 1px solid red;
+  margin-top: 40px;
+  margin-top: 20px;
+}
+
+/* Button Section */
+
+.buttonArea {
+  border: 1px solid red;
+  margin-top: 50px;
+}
+
+/* Already have an account? */
