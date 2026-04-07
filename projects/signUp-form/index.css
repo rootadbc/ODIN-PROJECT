@@ -1,3 +1,11 @@
+
+
+:root {
+  --primary-color: rgb(12, 245, 12);
+  --primary-shadow: rgb(24, 248, 166);
+}
+
+
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 body {
@@ -12,6 +20,21 @@ body {
   
 
 /* =============> Image  section <======================*/
+
+.imgSection {
+display: block;
+    
+
+}
+
+.imgSection > img {
+  /* border: 1px solid red; */
+  position:relative;
+  opacity: 60%;
+  top:80px;
+  margin-top:0;
+}
+
 
 figure {
     margin:0;
@@ -33,13 +56,17 @@ figure {
 .imageWithCaption > figcaption {
   /* border: 1px solid red; */
  
-  color: #999;             /* light gray */
+  color: #faf6f6;             /* light gray */
   text-align: center;
   font-size: small;
   position: relative;
+    bottom: 40px;
   
 } 
 
+figcaption > a {
+  color: rgb(240, 241, 243);
+}
 
 
 /* ==========Whole Text Area section ================ */
@@ -130,6 +157,34 @@ button {
 }
 
 .buttonArea > h5 > a {
-  color: rgb(17, 243, 70);
+  color: rgb(13, 52, 225);
   text-decoration: none;
+}
+
+
+/* ========> Validation Styles */
+
+:hover {
+
+
+
+}   
+
+:focus {
+
+
+
+}
+
+input:valid {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-shadow);
+}
+
+
+
+
+input:invalid {
+  border-color: red;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
 }
