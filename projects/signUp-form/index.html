@@ -35,55 +35,68 @@
 
 
             </div>
+            <form action=" example.com/path" method="post">
 
-            <div class="formArea">
+                <div class="formArea">
 
-                <h4>Let's do this! </h4>
+                    <h4>Let's do this! </h4>
 
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="first_name"> FIRST NAME</label>
-                        <input type="text" class="styled-input" id="first_name" name="first_name">
+
+
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="first_name"> *FIRST NAME</label>
+                            <input type="text" class="styled-input" id="first_name" name="first_name"
+                                pattern="[A-Za-z][A-Za-z\s\-']{1,29}" title="Last name: letters only, 2-30 characters"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last_name"> *LAST NAME</label>
+                            <input type="text" class="styled-input" id="last_name" name="last_name"
+                                pattern="[A-Za-z][A-Za-z\s\-']{1,29}" title="Last name: letters only, 2-30 characters"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">*EMAIL</label>
+                            <input type="email" class="styled-input" id="email" name="email"
+                                placeholder="name@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">*PHONE NUMBER</label>
+                            <input type="tel" class="styled-input" id="phone" name="phone" pattern="\+?[1-9]\d{1,14}"
+                                title="Phone: International format (+1234567890) or local digits" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password"> *PASSWORD</label>
+                            <input type="password" class="styled-input" id="password" name="password" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm_password"> *CONFIRM PASSWORD</label>
+                            <input type="password" class="styled-input" id="confirm_password" name="confirm_password"
+                                required>
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="last_name"> LAST NAME</label>
-                        <input type="text" class="styled-input" id="last_name" name="last_name">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">EMAIL</label>
-                        <input type="email" class="styled-input" id="email" name="email"
-                            placeholder="...........@example.com">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" class="styled-input" id="phone" name="phone">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="password"> PASSWORD</label>
-                        <input type="password" class="styled-input" id="password" name="password">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="confirm_password"> CONFIRM PASSWORD</label>
-                        <input type="password" class="styled-input" id="confirm_password" name="confirm_password">
-                    </div>
                 </div>
 
-            </div>
+
+                <div class="buttonArea">
+
+                    <button type="submit"> Create Account</button>
 
 
-            <div class="buttonArea">
-
-                <button type="submit"> Create Account</button>
+                    <h5>Already have an account? <a href="#">Log in</a></h5>
 
 
-                <h5>Already have an account? <a href="#">Log in</a></h5>
 
-            </div>
+                </div>
+            </form>
 
         </div>
 

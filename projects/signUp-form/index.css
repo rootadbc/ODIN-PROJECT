@@ -25,7 +25,7 @@ figure {
 }
 
 /* Background Image */
-.imageWithCaption  img  {
+.imageWithCaption > img  {
 
 
 }
@@ -35,7 +35,8 @@ figure {
  
   color: #999;             /* light gray */
   text-align: center;
-  
+  font-size: small;
+  position: relative;
   
 } 
 
