@@ -1,11 +1,8 @@
-
-
 :root {
- 
+  /*  
   viewport-width: 100%;
-  viewport-height: 100%;
+  viewport-height: 100%; */
 }
-
 
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
@@ -13,64 +10,67 @@ body {
   /* border: 2px solid red; */
   font-family: "Anonymous Pro", monospace;
 
+  height: 100vh;
+  margin: 0;
+  width: 100%;
 }
 /* =======> Whole Container <============= */
 
 .formContainer {
   display: flex;
+  margin: 0;
+  height: 100%;
+}
 
 /* =============> Image  section <======================*/
 
 .imgSection {
-display: block;
-    
-
+  display: block;
+  width:65%;
 }
 
 /* used the attribute selector img[src="puppy.jpg"] */
-img[src="./root.png"] { 
-  position:absolute;
-  opacity:65%;
+img[src="./root.png"] {
+  /*  logan image */
+  position: absolute;
+  opacity: 65%;
   bottom: 60%;
+  
+  
  
- /* inset-inline-start:  */
-  margin-top:0;
 }
-
 
 figure {
-    margin:0;
+  margin: 0;
 }
 
-.imageWithCaption {
- 
-}
 
-/* Background Image */
 
 /* used the attribute selector img[src="puppy.jpg"] */
 
-img[src="./logan-voss.jpg"] {
+img[src="./logan-voss.jpg"] { /*  logan image */
+
+  height: 100vh;
+  width: 100%;
 
 }
 
-.imageWithCaption > figcaption {
-  /* border: 1px solid red; */
- 
-  color: #f2efef;
- 
-  position: absolute;
-  bottom: 4%;
-
-  font-size:70%;
- 
+figcaption {
   
-} 
+  position: absolute;
+  bottom:1%;
+  left: 4%;
+
+  color: rgb(249, 241, 241)
+  
+  
+
+}
+
 
 figcaption a {
-  color: rgb(240, 241, 243);
+  color: white;
 }
-
 
 /* ==========Whole Text Area section ================ */
 
@@ -164,34 +164,21 @@ button {
   text-decoration: none;
 }
 
-
 /* ========> Validation Styles */
 
-
-
-
-
 input:active {
-    outline: 2px solid dodgerblue;
-
+  outline: 2px solid dodgerblue;
 }
 
 input:valid {
-
-   outline: 2px solid rgb(20, 202, 93);
-   box-shadow: 0 0 0 3px rgba(30, 232, 104, 0.618);
-
-
+  outline: 2px solid rgb(20, 202, 93);
+  box-shadow: 0 0 0 3px rgba(30, 232, 104, 0.618);
 }
-
 
 input:invalid {
-
-   outline: 2px solid rgb(246, 73, 10);
+  outline: 2px solid rgb(246, 73, 10);
 }
 
-
 button:active {
-
   transform: scale(0.97);
 }
