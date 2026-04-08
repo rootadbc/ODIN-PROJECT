@@ -2,6 +2,8 @@
 
 :root {
  
+  viewport-width: 100%;
+  viewport-height: 100%;
 }
 
 
@@ -25,8 +27,8 @@ display: block;
 
 }
 
-.imgSection > img {
-  /* border: 1px solid red; */
+/* used the attribute selector img[src="puppy.jpg"] */
+img[src="./root.png"] { 
   position:absolute;
   opacity:65%;
   bottom: 60%;
@@ -45,7 +47,10 @@ figure {
 }
 
 /* Background Image */
-.imageWithCaption > img  {
+
+/* used the attribute selector img[src="puppy.jpg"] */
+
+img[src="./logan-voss.jpg"] {
 
 }
 
@@ -163,14 +168,30 @@ button {
 /* ========> Validation Styles */
 
 
-input:invalid {
+
+
+
+input:active {
+    outline: 2px solid dodgerblue;
+
 }
 
 input:valid {
+
+   outline: 2px solid rgb(20, 202, 93);
+   box-shadow: 0 0 0 3px rgba(30, 232, 104, 0.618);
+
+
 }
 
 
-:focus {
-  border-color: rgb(11, 11, 11);
-  
+input:invalid {
+
+   outline: 2px solid rgb(246, 73, 10);
+}
+
+
+button:active {
+
+  transform: scale(0.97);
 }
