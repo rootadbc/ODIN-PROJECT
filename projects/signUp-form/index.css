@@ -163,17 +163,14 @@ button {
 /* ========> Validation Styles */
 
 
-.styled-input:invalid {
-  border-color: red;
+input:invalid {
 }
 
-.styled-input:valid {
-  border-color: rgb(67, 21, 232);
-  box-shadow: 0 0 5px 1px rgba(67, 21, 232, 0.5);
+input:valid {
 }
 
 
-.styled-input:focus:invalid {
-  border-color: red;
+:focus {
+  border-color: rgb(11, 11, 11);
   
 }
