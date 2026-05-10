@@ -160,6 +160,9 @@ body {
 
 /* container END */
 
+
+
+
 /* sidebar START */
 
 .sidebar {
@@ -170,7 +173,6 @@ body {
 
   nav {
     border: 1px solid red;
-    
   }
 
   a {
@@ -180,7 +182,10 @@ body {
 
 /* sidebar END */
 
-/*heading START */
+
+
+
+/* heading START */
 
 .heading {
   display: grid;
@@ -188,43 +193,44 @@ body {
   border: 1px solid red;
   background-color: white;
 
-  div {
-    border: 1px solid red;
-  }
-}
-
-.search-bar,
-.user-profile,
-.profile-user,
-.nav-profile {
-  display: grid;
+  
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "search-bar user-profile"
     "profile-user nav-profile";
+
+
 }
 
 .search-bar {
+        border: 1px solid red;
+
   grid-area: search-bar;
 }
 
 .user-profile {
+        border: 1px solid red;
+
   grid-area: user-profile;
 }
 
 .profile-user {
+        border: 1px solid red;
+
   grid-area: profile-user;
 }
 
 .nav-profile {
+        border: 1px solid red;
+
   grid-area: nav-profile;
 
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  a {
     border: 1px solid red;
     border-radius: 25px;
     text-decoration: none;
@@ -235,29 +241,107 @@ body {
 
 /* heading END */
 
+
+
 /* main-content START */
 
 .main-content {
   grid-area: main-content;
+
   border: 1px solid red;
-  background-color: ash;
+  background-color: rgb(234, 230, 230);
+
+  display: grid;
 
   grid-template-columns: 2fr 1fr;
-  grid-template-areas: none
-  "your-project announce-trend"
-  
-  ;
-
+  grid-template-areas: "your-project announce-trend";
 }
 
 .your-project {
+  grid-area: your-project;
 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "super-cool-project less-cool-project"
+    "impossible-app easy-peasy-app"
+    "ad-blocker money-maker";
 
+  gap: 10px;
+  border: 1px solid red;
 }
 
+.super-cool-project {
+  border: 1px solid red;
+  background-color: white;
+
+  grid-area: super-cool-project;
+}
+
+.less-cool-project {
+  border: 1px solid red;
+  background-color: white;
+
+  grid-area: less-cool-project;
+}
+
+.impossible-app {
+  border: 1px solid red;
+  background-color: white;
+
+  grid-area: impossible-app;
+}
+
+.easy-peasy-app {
+  border: 1px solid red;
+  background-color: white;
+
+  grid-area: easy-peasy-app;
+}
+
+.ad-blocker {
+  border: 1px solid red;
+  background-color: white;
+
+  grid-area: ad-blocker;
+}
+
+.money-maker {
+  border: 1px solid red;
+  background-color: white;
+
+  grid-area: money-maker;
+}
 
 .announce-trend {
+  border: 1px solid red;
+  background-color: white;
 
+  grid-area: announce-trend;
+}
+
+.announce-trend {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "announcement"
+    "trending";
+  gap: 15px;
+}
+
+.announcement {
+  border: 1px solid red;
+  background-color: white;
+
+  grid-area: announcement;
+}
+
+.trending {
+  border: 1px solid red;
+  background-color: white;
+
+  grid-area: trending;
 }
 
 /* main-content END */
