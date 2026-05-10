@@ -83,7 +83,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -134,37 +133,131 @@ video {
 /* Font-face declarations  END */
 
 :root {
-
-
+  height: 100vh;
+  width: 100vw;
 }
-
 
 body {
   font-family:
     "Commissioner-Light", "AnonymousPro-Regular", "SNPro-VariableFont",
     "Monstserrat-Variable", "Arial", sans-serif;
 
-  
   border: 1px solid red;
 }
 
-
+/* Container START */
 
 .container {
-  
-  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas:
+    "sidebar heading"
+    "sidebar main-content";
+
+  /* border: 1px solid red; */
 }
+
+/* container END */
+
+/* sidebar START */
 
 .sidebar {
+  display: grid;
+  grid-area: sidebar;
+  background-color: lightskyblue;
   border: 1px solid red;
+
+  nav {
+    border: 1px solid red;
+    
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
+
+/* sidebar END */
+
+/*heading START */
 
 .heading {
-  
+  display: grid;
+  grid-area: heading;
   border: 1px solid red;
+  background-color: white;
+
+  div {
+    border: 1px solid red;
+  }
 }
 
+.search-bar,
+.user-profile,
+.profile-user,
+.nav-profile {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "search-bar user-profile"
+    "profile-user nav-profile";
+}
+
+.search-bar {
+  grid-area: search-bar;
+}
+
+.user-profile {
+  grid-area: user-profile;
+}
+
+.profile-user {
+  grid-area: profile-user;
+}
+
+.nav-profile {
+  grid-area: nav-profile;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid red;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: lightskyblue;
+    color: white;
+  }
+}
+
+/* heading END */
+
+/* main-content START */
 
 .main-content {
+  grid-area: main-content;
   border: 1px solid red;
+  background-color: ash;
+
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: none
+  "your-project announce-trend"
+  
+  ;
+
 }
+
+.your-project {
+
+
+}
+
+
+.announce-trend {
+
+}
+
+/* main-content END */
