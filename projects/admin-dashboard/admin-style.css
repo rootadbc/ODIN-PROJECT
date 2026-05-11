@@ -132,6 +132,8 @@ video {
 
 /* Font-face declarations  END */
 
+/* Global styles START */
+
 :root {
   height: 100vh;
   width: 100vw;
@@ -144,6 +146,8 @@ body {
 
   border: 1px solid red;
 }
+
+/* Global styles END */
 
 /* Container START */
 
@@ -160,32 +164,74 @@ body {
 
 /* container END */
 
-
-
-
 /* sidebar START */
 
 .sidebar {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 25px;
+
+  padding: 20px;
+
   grid-area: sidebar;
-  background-color: lightskyblue;
+  background-color: rgb(18, 164, 255);
   border: 1px solid red;
 
-  nav {
-    border: 1px solid red;
+  img,
+  a {
+    color: white;
+  }
+}
+
+.sidebar > div {
+  border: 1px solid red;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+
+  a {
+    text-decoration: none;
+    /* color: white; */
+    font-weight: bolder;
+    font-size: x-large;
+  }
+
+  img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.sidebar > nav {
+  border: 1px solid red;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  img {
+    width: 30px;
+    height: 30px;
   }
 
   a {
     text-decoration: none;
+    /* color: white; */
+    font-weight: bolder;
   }
+}
+
+nav.communities {
+  margin-bottom: 40px;
 }
 
 /* sidebar END */
 
-
-
-
-/* heading START */
+/* heading Section START */
 
 .heading {
   display: grid;
@@ -193,55 +239,65 @@ body {
   border: 1px solid red;
   background-color: white;
 
-  
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1.2fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "search-bar user-profile"
     "profile-user nav-profile";
 
-
+    padding: 10px;
 }
 
 .search-bar {
-        border: 1px solid red;
+  border: 1px solid red;
 
   grid-area: search-bar;
+
+    display: flex;
+    align-items: center;
 }
 
 .user-profile {
-        border: 1px solid red;
+  border: 1px solid red;
 
   grid-area: user-profile;
 }
 
 .profile-user {
-        border: 1px solid red;
+  border: 1px solid red;
 
   grid-area: profile-user;
 }
 
 .nav-profile {
-        border: 1px solid red;
+  border: 1px solid red;
 
   grid-area: nav-profile;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 
   a {
-    border: 1px solid red;
+
+   
+
     border-radius: 25px;
-    text-decoration: none;
-    background-color: lightskyblue;
+    padding: 5px 25px;
+    background-color: rgb(18, 164, 255);
+
+    font-size: small;
+    font-weight: bolder;
     color: white;
+
+
+    text-decoration: none;
+    
+    
   }
 }
 
 /* heading END */
-
-
 
 /* main-content START */
 
@@ -249,13 +305,18 @@ body {
   grid-area: main-content;
 
   border: 1px solid red;
+  padding: 30px;
+
   background-color: rgb(234, 230, 230);
 
   display: grid;
 
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 0.9fr;
   grid-template-areas: "your-project announce-trend";
+  gap: 15px;
 }
+
+/* main-content (your-project) START */
 
 .your-project {
   grid-area: your-project;
@@ -268,56 +329,65 @@ body {
     "impossible-app easy-peasy-app"
     "ad-blocker money-maker";
 
-  gap: 10px;
+  gap: 15px;
   border: 1px solid red;
 }
 
 .super-cool-project {
-  border: 1px solid red;
-  background-color: white;
-
   grid-area: super-cool-project;
 }
 
 .less-cool-project {
-  border: 1px solid red;
-  background-color: white;
-
   grid-area: less-cool-project;
 }
 
 .impossible-app {
-  border: 1px solid red;
-  background-color: white;
-
   grid-area: impossible-app;
 }
 
 .easy-peasy-app {
-  border: 1px solid red;
-  background-color: white;
-
   grid-area: easy-peasy-app;
 }
 
 .ad-blocker {
-  border: 1px solid red;
-  background-color: white;
-
   grid-area: ad-blocker;
 }
 
 .money-maker {
-  border: 1px solid red;
-  background-color: white;
-
   grid-area: money-maker;
 }
+
+.super-cool-project,
+.less-cool-project,
+.impossible-app,
+.easy-peasy-app,
+.ad-blocker,
+.money-maker {
+  border: 1px solid red;
+  background-color: white;
+  border-radius: 5px;
+
+  /* padding:20px; */
+  width: 100%;
+  height: 80%;
+
+  .img {
+    border: 1px solid red;
+       display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+}
+
+/* main-content (your-project) END */
+
+/* main-content (announce-trend) START */
 
 .announce-trend {
   border: 1px solid red;
   background-color: white;
-
+  border-radius: 15px;
   grid-area: announce-trend;
 }
 
@@ -328,10 +398,13 @@ body {
     "announcement"
     "trending";
   gap: 15px;
+  /* background-color: rgb(234, 230, 230); */
 }
 
 .announcement {
   border: 1px solid red;
+  border-radius: 5px;
+
   background-color: white;
 
   grid-area: announcement;
@@ -339,9 +412,13 @@ body {
 
 .trending {
   border: 1px solid red;
+  border-radius: 5px;
+
   background-color: white;
 
   grid-area: trending;
 }
+
+/* main-content (announce-trend) START */
 
 /* main-content END */
