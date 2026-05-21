@@ -151,7 +151,7 @@ body {
 }
 
 /* Optional utility for debugging layout */
-/* * { outline: 1px solid red; } */
+* { outline: 1px solid red; }
 
 
 
@@ -357,9 +357,26 @@ nav.communities {
 
 .your-project {
   grid-area: your-project;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+/* NEW: title is now outside the grid */
+.your-project .title {
+  margin: 0;
+}
+
+.your-project .title h2 {
+  margin: 0;
+}
+
+
+
+.project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
-  gap: var(--space-3);
+  gap: var(--space-6);
 }
 
 /* Shared card styles for all projects */
@@ -372,7 +389,7 @@ nav.communities {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: var(--space-1);
+  gap: var(--space-2);
   padding: var(--space-6);
   background-color: var(--color-surface);
   border-radius: var(--radius-sm);
