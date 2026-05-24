@@ -6,21 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-    <section class="hero">
-        <img src="./images/lib.png" alt="" class="hero-bg">
-
-        <div class="overlay"></div>
-
-
-    </section>
+  
 
 
 
+    <main class="overlay-container">
+
+        <section class="search-section" aria-labelledby="search-heading">
+            <h2 id="search-heading">Search Library</h2>
+            <form class="search-form" action="#" method="get">
+                <label for="searchInput"></label>
+                <input type="text" id="searchInput" name="query" placeholder="Search books, authors...">
+                <button type="submit" id="searchButton">Search</button>
+            </form>
+        </section>
+
+
+
+
+        <section class="book-section" aria-labelledby="book-list-heading">
+            <h2 id="book-list-heading">Book List</h2>
+
+            <div class="book-list" id="bookList">
+                <article class="card">
+                    <h3>Book Title</h3>
+                    <p><strong>Author:</strong> Author Name</p>
+                    <p><strong>Pages:</strong> Page Count</p>
+                </article>
+
+                <article class="card">
+                    <h3>Book Title</h3>
+                    <p><strong>Author:</strong> Author Name</p>
+                    <p><strong>Pages:</strong> Page Count</p>
+                </article>
+
+                <article class="card">
+                    <h3>Book Title</h3>
+                    <p><strong>Author:</strong> Author Name</p>
+                    <p><strong>Pages:</strong> Page Count</p>
+                </article>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="add-book-section" aria-labelledby="add-book-heading">
+            <h2 id="add-book-heading">Add New Book</h2>
+
+            <form class="book-form" action="#" method="post">
+                <fieldset>
+                    <legend>Book Details</legend>
+
+                    <div class="form-group">
+                        <label for="name">Author Name</label>
+                        <input type="text" id="name" name="author_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="title">Book Title</label>
+                        <input type="text" id="title" name="book_title" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="page_read">Pages Read</label>
+                        <input type="number" id="page_read" name="pages_read" min="0">
+                    </div>
+
+                    <fieldset class="radio-group">
+                        <legend>Reading Status</legend>
+
+                        <div>
+                            <input type="radio" name="reading_status" id="read" value="read">
+                            <label for="read">Read</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="reading_status" id="not_read" value="not_read">
+                            <label for="not_read">Not Read</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="buttonArea">
+                        <button type="reset">Reset</button>
+                        <button type="submit">Add Book</button>
+                    </div>
+                    
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
 
     <script src="./script.js"></script>
 </body>

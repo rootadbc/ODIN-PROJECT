@@ -1,24 +1,219 @@
-
-.hero {
-  position: relative;
-  min-height: 100vh;
-  overflow: hidden;
+/* =========
+   Reset
+========= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-  opacity: 0.8;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f5f1e8;
+  opacity: 0.95;
+  color: #222222;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("./images/lib.png") center / cover no-repeat fixed;
 }
 
-/* .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  z-index: 2;
+/* Debug only — uncomment when needed */
+/* * {
+  outline: 1px solid red;
 } */
 
+/* =========
+   Layout
+========= */
+.overlay-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10rem;
+  padding: 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========
+   Sections
+========= */
+.search-section,
+.book-section,
+.add-book-section {
+  background: rgba(188, 160, 2, 0.48);
+      
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(244, 244, 241, 0.411);
+}
+
+/* =========
+   Search
+========= */
+
+.search-section h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #f6f2f2;
+  justify-self: center;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  
+}
+
+.search-form input {
+  flex: 1 1 250px;
+  padding: 0.9rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 70px;
+  font-size: 1rem;
+}
+
+.search-form button {
+  padding: 0.9rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background: #474204;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background: #0514e0;
+}
+
+/* =========
+   Book grid
+========= */
+
+.book-section h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #f6f2f2;
+  justify-self: center;
+}
+
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fffdf9;
+  box-shadow: 0 2px 8px rgb(66, 66, 1);
+}
+
+/* =========
+   Form
+========= */
+
+.add-book-section h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #f6f2f2;
+  justify-self: center;
+}
+
+
+.book-form fieldset {
+  border: 1px solid #d8d1c43e;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 0 0 1rem;
+}
+
+.book-form legend {
+  font-weight: bold;
+  padding: 0 0.5rem;
+  font-size: 1.4rem;
+  color: #f7f5f5;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.book-form label {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #f7f5f5;
+}
+
+.book-form input[type="text"],
+.book-form input[type="number"] {
+  padding: 0.85rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.radio-group div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.buttonArea {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buttonArea button {
+  padding: 0.85rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.buttonArea button[type="reset"] {
+  background: #d9d9d9;
+  color: #222;
+}
+
+.buttonArea button[type="submit"] {
+  background: #2506ee;
+  color: white;
+}
+
+.buttonArea button[type="submit"]:hover {
+  background: #6f4a2f;
+}
+
+/* =========
+   Responsive
+========= */
+@media (max-width: 768px) {
+  .overlay-container {
+    padding: 1rem;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+
+  .buttonArea {
+    flex-direction: column;
+  }
+
+  .buttonArea button {
+    width: 100%;
+  }
+}
