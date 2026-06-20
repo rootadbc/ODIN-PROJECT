@@ -16,6 +16,7 @@
 // ======================================================
 
 
+
 // ==============================
 // 1. DATA LAYER
 // ==============================
@@ -72,6 +73,7 @@ function getBookById(bookId) {
 // Starter books so the UI has visible content immediately.
 addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 295, true);
 addBookToLibrary("Eloquent JavaScript", "Marijn Haverbeke", 472, false);
+addBookToLibrary("Atomic Habits", "James Clear", 320, true);
 
 
 // ==============================
